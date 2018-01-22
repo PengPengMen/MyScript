@@ -12,8 +12,8 @@ function updateip ($ip) {
 }
 
 function hostname_yu($hostname) {
-    $Username = 'CF\menpp'
-    $Password = '123456'
+    $Username = '域用户'
+    $Password = '域密码'
     $Pass = ConvertTo-SecureString $Password -AsPlainText -Force
     $Cred = New-Object System.Management.Automation.PSCredential -ArgumentList $Username,$Pass
     Add-Computer -NewName $hostname -DomainName cf.local -Credential $Cred 
